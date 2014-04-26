@@ -1,0 +1,5 @@
+lua-term (0.03.20140426.g1ba9a8e-1) unstable; urgency=low
+
+  * Initial release (Closes: #743966)
+
+ -- Aaron Zauner <azet@azet.org>  Sun, 04 May 2014 14:33:23 -0500

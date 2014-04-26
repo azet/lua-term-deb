@@ -1,0 +1,28 @@
+Source: lua-term
+Priority: optional
+Maintainer: Aaron Zauner <azet@azet.org>
+Build-Depends: debhelper (>= 9), dh-lua
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://github.com/hoelzro/lua-term
+
+Package: lua-term
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: ${lua:Provides}
+XB-Lua-Versions: ${lua:Versions}
+Description: Lua module for manipulating a terminal
+ lua-term provides a library interface to facilitate
+ terminal operations and manipulations in Lua.
+
+Package: lua-term-dev
+Section: libdevel
+Architecture: any
+Depends: lua-term (= ${binary:Version}), ${misc:Depends}
+Provides: ${lua:Provides}
+XB-Lua-Versions: ${lua:Versions}
+Description: Lua module for manipulating a terminal
+ This package provide the development headers and static
+ libraries for lua-term. Terminal operations for Lua.
+
